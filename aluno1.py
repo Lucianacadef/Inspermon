@@ -10,31 +10,11 @@ def mostra_ipmon(ipmon):
 
 with open('inspermon_world.json') as arquivo:
     inspermons = json.load(arquivo)
-   
-   
-      
-#BATALHA INSPERMON\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    
-def calcular_batalha(selvagem,ipmon2):
-    for ipmon2 in Insperdex:
-        while selvagem["vida"] and ipmon2["vida"] > 0:
-            selvagem["vida"] = selvagem["vida"] - (ipmon2["poder"] - selvagem["defesa"])
-            ipmon2["vida"] = ipmon2["vida"] - (selvagem["poder"] - ipmon2["defesa"])
-            if ipmon2["vida"] <= 0:
-                print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
-                break
-            else:
-                print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
-                if selvagem not in Insperdex:
-                    Insperdex.append(selvagem)
-                    print(Insperdex)
-                break
-            return calcular_batalha(selvagem,ipmon2)
-    
-#Fase 1:\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
         
 with open('Insperdex.json') as arquivo:
-    Insperdex = json.load(arquivo)  
+    Insperdex = json.load(arquivo)
+    
 inspermons_iniciais = [{'nome': 'Pedrodimon', 'poder': 20, 'vida': 200, 'defesa': 12}, {'nome': 'Lufreimon', 'poder': 15, 'vida': 300, 'defesa': 14}, {'nome': 'Jhonamon', 'poder': 10, 'vida': 150, 'defesa': 15}]
 inicio = input("Bem vindo ao Inspermon!!! Você se encontra no Insper World, onde várias criaturas estranhas aqui habitam. Você está preparado para essa aventura? Sim ou Não:").lower().title()
 
