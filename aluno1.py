@@ -1,5 +1,6 @@
 #ABERTURA DE PROGRA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import json
+from Fase_batalha import calcular_batalha
 
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
