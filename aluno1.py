@@ -11,7 +11,6 @@ def mostra_ipmon(ipmon):
 with open('inspermon_world.json') as arquivo:
     inspermons = json.load(arquivo)
 
-        
 with open('Insperdex.json') as arquivo:
     Insperdex = json.load(arquivo)
     
