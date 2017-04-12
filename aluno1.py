@@ -2,7 +2,7 @@
 
 import json
 from Inicio_jogo import inicio_jogo
-from Fase_batalha import calcular_batalha(selvagem,ipmon2)
+from Fase_batalha import calcular_batalha
 from random import randrange
 from Fugir_batalha import fugir_batalha
 
