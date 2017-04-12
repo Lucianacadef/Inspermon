@@ -17,11 +17,13 @@ def calcular_batalha(selvagem,ipmon2):
                     fugir_batalha()
             r += 1
                 
-        if ipmon2["vida"] <= 0:    
+        if ipmon2["vida"] <= 0:
+            ipmon2["vida"] = vida_ipmon2
             print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
             
                 
         elif ipmon2["vida"] <= 0:
+            ipmon2["vida"] = vida_ipmon2
             print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
 
-        ipmon2["vida"] = vida_ipmon2
+       
