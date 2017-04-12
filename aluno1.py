@@ -1,10 +1,10 @@
 #ABERTURA DE PROGRA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 import json
-from Inicio_jogo import inicio_jogo()
+from Inicio_jogo import inicio_jogo
 from Fase_batalha import calcular_batalha(selvagem,ipmon2)
 from random import randrange
-from Fugir_batalha import fugir_batalha()
+from Fugir_batalha import fugir_batalha
 
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
