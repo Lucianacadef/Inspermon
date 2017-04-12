@@ -3,7 +3,7 @@ def calcular_batalha(selvagem,ipmon2):
         vida_ipmon2 = ipmon2["vida"]
         vida_selvagem = selvagem["vida"]
         r = 1
-        for r in range (1,200):
+        while r <= 200:
             while selvagem["vida"] > 0 and ipmon2["vida"] > 0:
                 if r%2 != 0:
                     if ipmon2["poder"] - selvagem["defesa"] > 0:
@@ -41,7 +41,7 @@ def calcular_batalha(selvagem,ipmon2):
                     print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
                     return
                 else:
-                    print("Empatou!!!! Parabéns pela batalha!!!"))
+                    print("Empatou!!!! Parabéns pela batalha!!!")
                     return
                 
             if ipmon2["vida"] <= 0:
