@@ -1,6 +1,6 @@
 def calcular_batalha(selvagem,ipmon2):
     import Inicio_jogo
-    from Fugir_batalha import fugir_batalha()
+    from Fugir_batalha import fugir_batalha
     for ipmon2 in seu_ipmon:
         vida_ipmon2 = ipmon2["vida"]
         vida_selvagem = selvagem["vida"]

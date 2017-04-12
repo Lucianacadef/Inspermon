@@ -1,7 +1,7 @@
 #INICIO|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-from Fugir_batalha import fugir_batalha()
-from Fase_batalha import calcular_batalha(selvagem,ipmon2)
+from Fugir_batalha import fugir_batalha
+from Fase_batalha import calcular_batalha
 from random import randrange
 
 def inicio_jogo():
