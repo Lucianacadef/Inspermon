@@ -1,63 +1,20 @@
 #ABERTURA DE PROGRA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 import json
+from Inicio_jogo import inicio_jogo()
+from Fase_batalha import calcular_batalha(selvagem,ipmon2)
 from random import randrange
+from Fugir_batalha import fugir_batalha()
 
 def mostra_ipmon(ipmon):
     print("Inspermon : {0}".format(ipmon["nome"]))
     print("poder = {0}".format(ipmon["poder"]))
     print("vida = {0}".format(ipmon["vida"]))
     print("defesa = {0}\n".format(ipmon["defesa"]))
-    
-#Fase de Batalha|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-    
-def calcular_batalha(selvagem,ipmon2):
-    vida_ipmon2 = ipmon2["vida"]
-    r = 1
-    while selvagem["vida"] > 0 and ipmon2["vida"] > 0:
-        if r%2 != 0:
-            selvagem["vida"] = selvagem["vida"] - (ipmon2["poder"] - selvagem["defesa"])
-            print("Round {0}".format(r))
-            print("{0} tem {1} de vida".format(selvagem["nome"],selvagem["vida"]))
-            
-        elif r%2 == 0:
-            if  ipmon2["vida"] >= vida_ipmon2/2:
-                ipmon2["vida"] = ipmon2["vida"] - (selvagem["poder"] - ipmon2["defesa"])
-                print("Round {0}".format(r))
-                print("{0} tem {1} de vida".format(ipmon2["nome"],ipmon2["vida"]))
-            else:
-                Fugir = input("Você quer fugir da batalha? Sim ou Não:").lower().title()
-                if Fugir == "Sim":
-                    print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
-                    return
-        r += 1
-            
-    if ipmon2["vida"] <= 0:    
-        print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
-        
-            
-    elif ipmon2["vida"] <= 0:
-        print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
-        
-        
-    
-#INICIO|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-def inicio_jogo():
-    while True:
-            opçoes = input("Escolha uma das duas opções: Dormir ou Passear:").lower().title()
-            if opçoes == "Dormir":
-                 break
-            else:
-                numero = randrange(len(inspermons))
-                selvagem = inspermons[numero]
-                
-                print("Você encontrou o inspermon selvagem {0}!".format(selvagem["nome"]))
-                if selvagem not in Insperdex:
-                    Insperdex.append(selvagem)
-                calcular_batalha(selvagem,ipmon2)
-
    
      
 #Fase 1||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
 with open('inspermon_world.json') as arquivo:
     inspermons = json.load(arquivo)
 
@@ -83,6 +40,7 @@ if inicio == "Sim":
             print("Seu inspermon inicial é {0}". format(ipmon2["nome"]))
             Insperdex.append(ipmon2)
             seu_ipmon.append(ipmon2)
+    print(seu_ipmon)
     inicio_jogo()
 else:
     print("Nos vemos em breve!!!")
