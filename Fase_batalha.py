@@ -1,6 +1,6 @@
+from Fugir_batalha import fugir_batalha
+
 def calcular_batalha(selvagem,ipmon2):
-    import Inicio_jogo
-    from Fugir_batalha import fugir_batalha
     for ipmon2 in seu_ipmon:
         vida_ipmon2 = ipmon2["vida"]
         vida_selvagem = selvagem["vida"]
@@ -32,26 +32,35 @@ def calcular_batalha(selvagem,ipmon2):
                         ipmon2["vida"] = ipmon2["vida"] 
                         print("Round {0}".format(r))
                         print("{0} tem {1} de vida".format(ipmon2["nome"],ipmon2["vida"]))
-                                   
-            r += 1
-            if r == 200:
-                print("Acabou o tempo!!!")
-                if selvagem_vida - selvage["vida"] < ipmon2_vida - iomon2["vida"]:
+                        
+                if ipmon2["vida"] <= 0:
+                    ipmon2["vida"] = vida_ipmon2
                     print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
-                    return
-                elif selvagem_vida - selvage["vida"] > ipmon2_vida - iomon2["vida"]:
-                    print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
-                    return
-                else:
-                    print("Empatou!!!! Parabéns pela batalha!!!")
-                    return
+                        
+                            
+                elif ipmon2["vida"] <= 0:
+                        ipmon2["vida"] = vida_ipmon2
+                        print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))                       
+            r += 1
+            
+    if r == 200:
+        print("Acabou o tempo!!!")
+        if selvagem_vida - selvage["vida"] < ipmon2_vida - iomon2["vida"]:
+            print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
+            return
+        elif selvagem_vida - selvage["vida"] > ipmon2_vida - iomon2["vida"]:
+             print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
+             return
+        else:
+            print("Empatou!!!! Parabéns pela batalha!!!")
+            return
                 
-            if ipmon2["vida"] <= 0:
-                ipmon2["vida"] = vida_ipmon2
-                print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
+        if ipmon2["vida"] <= 0:
+            ipmon2["vida"] = vida_ipmon2
+            print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
                 
                     
-            elif ipmon2["vida"] <= 0:
+        elif ipmon2["vida"] <= 0:
                 ipmon2["vida"] = vida_ipmon2
                 print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
 
