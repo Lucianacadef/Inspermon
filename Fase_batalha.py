@@ -1,26 +1,27 @@
-#Fase de Batalha
 def calcular_batalha(selvagem,ipmon2):
-    for ipmon2 in Insperdex:
-        while selvagem["vida"] and ipmon2["vida"] > 0:
-            r = 1
-           
-            if r%2 != 0:
-                
-                selvagem["vida"] = selvagem["vida"] - (ipmon2["poder"] - selvagem["defesa"])
-           
-            elif r%2 == 0:
-                
+    vida_ipmon2 = ipmon2["vida"]
+    r = 1
+    while selvagem["vida"] > 0 and ipmon2["vida"] > 0:
+        if r%2 != 0:
+            selvagem["vida"] = selvagem["vida"] - (ipmon2["poder"] - selvagem["defesa"])
+            print("Round {0}".format(r))
+            print("{0} tem {1} de vida".format(selvagem["nome"],selvagem["vida"]))
+            
+        elif r%2 == 0:
+            if  ipmon2["vida"] >= vida_ipmon2/2:
                 ipmon2["vida"] = ipmon2["vida"] - (selvagem["poder"] - ipmon2["defesa"])
-            print ("Round {0}".format(r))
-            r = r + 1
-           
-            if ipmon2["vida"] <= 0:
-                print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
-                break
+                print("Round {0}".format(r))
+                print("{0} tem {1} de vida".format(ipmon2["nome"],ipmon2["vida"]))
             else:
-                print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
-                if selvagem not in Insperdex:
-                    Insperdex.append(selvagem)
-                    print(Insperdex)
-                break
-            return calcular_batalha(selvagem,ipmon2)
+                Fugir = input("Você quer fugir da batalha? Sim ou Não:").lower().title()
+                if Fugir == "Sim":
+                    print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
+                    return
+        r += 1
+            
+    if ipmon2["vida"] <= 0:    
+        print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
+        
+            
+    elif ipmon2["vida"] <= 0:
+        print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
