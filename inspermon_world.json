@@ -1,8 +1,23 @@
-[{'nome': 'Pedrodimon', 'poder': 20, 'vida': 200, 'defesa': 9},
-{'nome': 'Lufreimon', 'poder': 15, 'vida': 300, 'defesa': 14},
-{'nome': 'Jhonamon', 'poder': 17, 'vida': 150, 'defesa': 12},
-{'nome': 'Wesmon', 'poder': 18, 'vida': 200, 'defesa': 11},
-{'nome': 'Arthimon', 'poder': 19, 'vida': 300, 'defesa': 10},    
-{'nome': 'Pdrosanmon', 'poder': 16, 'vida': 150, 'defesa': 13},
-{'nome': 'Iagomon', 'poder': 21, 'vida': 200, 'defesa': 8},
-]
+[
+	{
+		"nome" : "Lufreimon",
+		"poder" : 15,
+		"vida" : 260,
+		"defesa" : 14	},
+
+	{
+		"nome" : "Pedrosanmon",
+		"poder" : 16,
+		"vida" : 250,
+		"defesa" : 13	},
+
+	{
+		"nome" : "Jhonamon",
+		"poder" : 17,
+		"vida" : 240,
+		"defesa" : 12	}
+,
+	{		"nome" : "Wesmon",		"poder" : 18, 		"vida" : 230,		"defesa" : 11   },
+	{		"nome" : "Arthimon",            "poder" : 19,           "vida" : 220,           "defesa" : 10   },												
+	{		"nome" : "Pedrodimon",          "poder" : 20,           "vida" : 210,           "defesa" : 9    },											
+	{		"nome" : "Iagomon",             "poder" : 21,           "vida" : 200,           "defesa" : 8    }]											
