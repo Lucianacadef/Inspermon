@@ -62,7 +62,7 @@ def ganha_xp():
                         {'nome': 'kevinplast', 'poder': 32, 'vida': 260, 'defesa': 25},
                         {'nome': 'Luigiplast', 'poder': 33, 'vida': 270, 'defesa': 26},
                         {'nome': 'Pedroazamplast', 'poder': 34, 'vida': 280, 'defesa': 27},
-                        {'nome': 'Alexalmeiplast', 'poder': 35, 'vida': 290, 'defesa': 28},
+                        {'nome': 'Alexameiplast', 'poder': 35, 'vida': 290, 'defesa': 28},
                         {'nome': 'Gabrielgoplast', 'poder': 36, 'vida': 300, 'defesa': 29},
                         {'nome': 'Vitorcarplast', 'poder': 37, 'vida': 310, 'defesa': 30},
                         {'nome': 'Manocamplast', 'poder': 38, 'vida': 310, 'defesa': 31}]
@@ -80,14 +80,25 @@ def ganha_xp():
                           {'nome': 'Jhonasilver', 'poder': 47, 'vida': 300, 'defesa': 42},
                           {'nome': 'Wessilver', 'poder': 48, 'vida': 290, 'defesa': 41},
                           {'nome': 'Arthisilver', 'poder': 49, 'vida': 280, 'defesa': 43},
-                          {'nome': 'Pdrosansilver', 'poder': 46, 'vida': 310, 'defesa': 40},
+                          {'nome': 'Pedrosansilver', 'poder': 46, 'vida': 310, 'defesa': 40},
                           {'nome': 'Iagosilver', 'poder': 51, 'vida': 260, 'defesa': 38},
-			  {'nome': 'Lucicosilver', 'poder': 39, 'vida': 270, 'defesa': 39},
+			              {'nome': 'Lucicosilver', 'poder': 39, 'vida': 270, 'defesa': 39},
                           {'nome': 'Rodrreysilver', 'poder': 40, 'vida': 320, 'defesa': 44},
                           {'nome': 'Gilemessilver', 'poder': 41, 'vida': 300, 'defesa': 42},
                           {'nome': 'Esterquinsilver', 'poder': 42, 'vida': 290, 'defesa': 41},
                           {'nome': 'Davidfolsilver', 'poder': 43, 'vida': 280, 'defesa': 43},
-                          {'nome': 'Brunsilver', 'poder': 44, 'vida': 310, 'defesa': 40}]
+                          {'nome': 'Brunsilver', 'poder': 44, 'vida': 310, 'defesa': 40}
+                          {'nome': 'Emanusilver', 'poder': 52, 'vida': 260, 'defesa': 35}
+                          {'nome': 'Lucasilver', 'poder': 39, 'vida': 300, 'defesa': 40}
+                          {'nome': 'Guialisilver', 'poder': 47 , 'vida': 280, 'defesa': 45}
+                          {'nome': 'Vitorlisilver', 'poder': 42, 'vida': 310, 'defesa': 37}
+                          {'nome': 'Rothomesilver', 'poder': 50, 'vida': 290, 'defesa': 42}
+                          {'nome': 'Betosilver', 'poder': 45, 'vida': 270, 'defesa': 39}
+                          {'nome': 'Rebecatrisilver', 'poder': 43, 'vida': 290, 'defesa': 41}
+                          {'nome': 'Rodrigatsilver', 'poder': 41, 'vida': 310, 'defesa': 43}
+                          {'nome': 'Andresilver', 'poder': 48, 'vida': 270, 'defesa': 41}
+                          {'nome': 'Peazamsilver', 'poder': 46, 'vida': 300, 'defesa': 42}
+                          {'nome': 'Carretasilver', 'poder': 51, 'vida': 270, 'defesa': 40}]
              
              for ipmon in ipmon_lv4:
                  if ipmon not in inspermons:
@@ -96,14 +107,19 @@ def ganha_xp():
         elif ipmon2["level"] >= 8:
             ipmon2["nome"] =  ipmon2["nome"][0:len(ipmon2["nome"])-6] + 'gold'
 
-            ipmon_lv8 = [{'nome': 'Pedrodigold', 'poder': 90, 'vida': 350, 'defesa': 79},
+            ipmon_lv8 = [{'nome': 'Pedrodigold', 'poder': 90, 'vida': 350, 'defesa': 75},
                          {'nome': 'Lufreigold', 'poder': 85, 'vida': 400, 'defesa': 84},
                          {'nome': 'Jhonagold', 'poder': 87, 'vida': 380, 'defesa': 82},
                          {'nome': 'Wesgold', 'poder': 88, 'vida': 370, 'defesa': 81},
                          {'nome': 'Arthigold', 'poder': 89, 'vida': 360, 'defesa': 83},
                          {'nome': 'Pdrosangold', 'poder': 86, 'vida': 390, 'defesa': 80},
-                         {'nome': 'Iagogold', 'poder': 91, 'vida': 340, 'defesa': 78},
-			 {'nome': 'gold', 'poder': 67, 'vida': 350, 'defesa': 79},
+                         {'nome': 'Iagogold', 'poder': 91, 'vida': 340, 'defesa': 72},
+			             {'nome': 'Galigold', 'poder': 67, 'vida': 350, 'defesa': 79},
+                         {'nome': 'Pizzigold', 'poder': 72, 'vida': 340, 'defesa': 79},
+                         {'nome': 'Eligold', 'poder': 77, 'vida': 370, 'defesa': 78},
+                         {'nome': 'Tricategold', 'poder': 80, 'vida': 360, 'defesa': 80},
+                         {'nome': 'Vitorparigold', 'poder': 83, 'vida': 350, 'defesa': 77},
+                         {'nome': 'Brucurygold', 'poder': 84, 'vida': 340, 'defesa': 76},
                          {'nome': 'Fayreslegend', 'poder': 100, 'vida': 500, 'defesa': 100}]
     
             for ipmon in ipmon_lv8:
@@ -112,7 +128,7 @@ def ganha_xp():
             
         for ipmon in seu_ipmon:
             mostra_ipmon2(ipmon)
-        print("Você conseguiu evoluir seu Inspermon")
+        print("Seu Inspermon evoluiu!")
         JogoSalvar()
     
         
@@ -130,13 +146,13 @@ def fugir_batalha():
     
     if sorte%2 != 0:
         for ipmon2 in seu_ipmon:
-            print("Você consiguiu fugir, a sorte está com você")
+            print("Você consiguiu fugir, a sorte está com você.")
             ipmon2["vida"] = 0
         
     else:
-        print("Você não tirou um número ímpar, a  sorte não está com você!!!")
+        print("Você não tirou um número ímpar, a  sorte não está com você!")
         while True:
-            continuar = input("Vamos congtinuar, escreva 'Vamos':").lower().title()
+            continuar = input("Vamos continuar, digite 'Vamos':").lower().title()
             if continuar != "Vamos":
                 continue
             else:
@@ -182,7 +198,7 @@ def calcular_batalha(selvagem,ipmon2):
                             chance = 1
 
                         else:
-                            print("Essa opção não é valida")
+                            print("Essa opção não é válida!")
                             continue
                               
 
@@ -197,7 +213,7 @@ def calcular_batalha(selvagem,ipmon2):
                     sorte= randint(1,10)
                     print("Round {0}".format(r))
                     if sorte == 7:
-                         print("Parbéns!!! {0} desviou do ataque".format(ipmon2["nome"]))
+                         print("Parbéns! {0} desviou do ataque".format(ipmon2["nome"]))
                          continuar = input("Será que terá sorte novamente?")
                     else:
                         ipmon2["vida"] = ipmon2["vida"] - (selvagem["poder"] - ipmon2["defesa"])
@@ -206,11 +222,11 @@ def calcular_batalha(selvagem,ipmon2):
                 r += 1             
 
             if ipmon2["vida"] <= 0:
-                print("{0} ganhou!!! Você perdeu essa batalha".format(selvagem["nome"]))
+                print("{0} ganhou! Você perdeu essa batalha.".format(selvagem["nome"]))
                 
                 
             elif selvagem["vida"] <= 0:
-                print("{0} ganhou!!! Você ganhou essa batalha".format(ipmon2["nome"]))
+                print("Você ganhou essa batalha!")
                 ipmon2["xp"] = ipmon2["xp"] + 1
             
             
@@ -227,18 +243,18 @@ def calcular_batalha(selvagem,ipmon2):
                 continue
         
         for ipmon in Insperdex:
-            print("Sua Insperdex é essa:")
+            print("Sua Insperdex é:")
             mostra_ipmon(ipmon)
             
         for ipmon in seu_ipmon:
-            print("Seu Ipmon é esse:")
+            print("Seu Ipmon é:")
             mostra_ipmon2(ipmon)
             
         JogoSalvar()
      
 #Fase 1||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 while True:
-    Iniciar = input("Deseja Carregar o Jogo ou Jogar um novo? Escreva Novo ou Carregar:").lower().title()
+    Iniciar = input("Deseja carregar seu jogo antigo ou começar um novo? Escreva Novo ou Carregar:").lower().title()
     if Iniciar == "Novo":
         with open('inspermon_world.json') as arquivo:
             inspermons = json.load(arquivo)
@@ -253,7 +269,7 @@ while True:
                                {'nome': 'Jhonamon', 'poder': 17, 'vida': 240, 'defesa': 12, 'level' : 1, 'xp' : 0}
                                ]
         while True:
-            inicio = input("Bem vindo ao Inspermon!!! Você se encontra no Insper World, onde várias criaturas estranhas aqui habitam. Você está preparado para essa aventura? Sim ou Não:").lower().title()
+            inicio = input("Bem vindo ao Inspermon!!! Você se encontra no Insper World, onde várias criaturas selvagens aqui habitam. Você está preparado para essa aventura? Sim ou Não:").lower().title()
 
 
             if inicio == "Sim":
