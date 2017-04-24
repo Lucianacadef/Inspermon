@@ -67,8 +67,9 @@ def ganha_xp():
                         {'nome': 'Vitorcarplast', 'poder': 37, 'vida': 310, 'defesa': 30},
                         {'nome': 'Manocamplast', 'poder': 38, 'vida': 310, 'defesa': 31}]
             
-            if ipmon_lv2 not in inspermons:
-                inspermons.append(ipmon_lv2)
+            for ipmon in ipmon_lv2:
+                 if ipmon not in inspermons:
+                     inspermons.append(ipmon)
     
                 
         elif ipmon2["level"] == 4:
@@ -86,25 +87,11 @@ def ganha_xp():
                           {'nome': 'Gilemessilver', 'poder': 41, 'vida': 300, 'defesa': 42},
                           {'nome': 'Esterquinsilver', 'poder': 42, 'vida': 290, 'defesa': 41},
                           {'nome': 'Davidfolsilver', 'poder': 43, 'vida': 280, 'defesa': 43},
-                          {'nome': 'silver', 'poder': 44, 'vida': 310, 'defesa': 40},
-                          {'nome': 'silver', 'poder': 52, 'vida': 260, 'defesa': 38},
-			  {'nome': 'silver', 'poder': 53, 'vida': 270, 'defesa': 39},
-                          {'nome': 'silver', 'poder': 54, 'vida': 320, 'defesa': 44},
-                          {'nome': 'silver', 'poder': 55, 'vida': 300, 'defesa': 42},
-                          {'nome': 'silver', 'poder': 56, 'vida': 290, 'defesa': 41},
-                          {'nome': 'silver', 'poder': 57, 'vida': 280, 'defesa': 43},
-                          {'nome': 'silver', 'poder': 58, 'vida': 310, 'defesa': 40},
-                          {'nome': 'silver', 'poder': 59, 'vida': 260, 'defesa': 38},
-			  {'nome': 'silver', 'poder': 60, 'vida': 270, 'defesa': 39},
-                          {'nome': 'silver', 'poder': 61, 'vida': 320, 'defesa': 44},
-                          {'nome': 'silver', 'poder': 62, 'vida': 300, 'defesa': 42},
-                          {'nome': 'silver', 'poder': 63, 'vida': 290, 'defesa': 41},
-                          {'nome': 'silver', 'poder': 64, 'vida': 280, 'defesa': 43},
-                          {'nome': 'silver', 'poder': 65, 'vida': 310, 'defesa': 40},
-                          {'nome': 'silver', 'poder': 66, 'vida': 260, 'defesa': 38}]
+                          {'nome': 'Brunsilver', 'poder': 44, 'vida': 310, 'defesa': 40}]
              
-             if ipmon_lv4 not in inspermons:
-                 inspermons.append(ipmon_lv4)
+             for ipmon in ipmon_lv4:
+                 if ipmon not in inspermons:
+                     inspermons.append(ipmon)
                 
         elif ipmon2["level"] >= 8:
             ipmon2["nome"] =  ipmon2["nome"][0:len(ipmon2["nome"])-6] + 'gold'
@@ -117,32 +104,16 @@ def ganha_xp():
                          {'nome': 'Pdrosangold', 'poder': 86, 'vida': 390, 'defesa': 80},
                          {'nome': 'Iagogold', 'poder': 91, 'vida': 340, 'defesa': 78},
 			 {'nome': 'gold', 'poder': 67, 'vida': 350, 'defesa': 79},
-                         {'nome': 'gold', 'poder': 68, 'vida': 400, 'defesa': 84},
-                         {'nome': 'gold', 'poder': 69, 'vida': 380, 'defesa': 82},
-			 {'nome': 'gold', 'poder': 70, 'vida': 360, 'defesa': 83},
-                         {'nome': 'gold', 'poder': 71, 'vida': 390, 'defesa': 80},
-                         {'nome': 'gold', 'poder': 72, 'vida': 340, 'defesa': 78},
-			 {'nome': 'gold', 'poder': 73, 'vida': 350, 'defesa': 79},
-                         {'nome': 'gold', 'poder': 74, 'vida': 400, 'defesa': 84},
-                         {'nome': 'gold', 'poder': 75, 'vida': 380, 'defesa': 82},
-			 {'nome': 'gold', 'poder': 76, 'vida': 340, 'defesa': 78},
-			 {'nome': 'gold', 'poder': 77, 'vida': 350, 'defesa': 79},
-                         {'nome': 'gold', 'poder': 78, 'vida': 400, 'defesa': 84},
-                         {'nome': 'gold', 'poder': 79, 'vida': 380, 'defesa': 82},
-			 {'nome': 'gold', 'poder': 80, 'vida': 360, 'defesa': 83},
-                         {'nome': 'gold', 'poder': 81, 'vida': 390, 'defesa': 80},
-                         {'nome': 'gold', 'poder': 82, 'vida': 340, 'defesa': 78},
-			 {'nome': 'gold', 'poder': 83, 'vida': 350, 'defesa': 79},
-                         {'nome': 'gold', 'poder': 84, 'vida': 400, 'defesa': 84},
                          {'nome': 'Fayreslegend', 'poder': 100, 'vida': 500, 'defesa': 100}]
     
-            if ipmon_lv8 not in inspermons:
-                inspermons.append(ipmon_lv8)
+            for ipmon in ipmon_lv8:
+                 if ipmon not in inspermons:
+                     inspermons.append(ipmon)
             
         for ipmon in seu_ipmon:
             mostra_ipmon2(ipmon)
         print("Você conseguiu evoluir seu Inspermon")
-        
+        JogoSalvar()
     
         
 
@@ -261,7 +232,9 @@ def calcular_batalha(selvagem,ipmon2):
             
         for ipmon in seu_ipmon:
             print("Seu Ipmon é esse:")
-            mostra_ipmon2(ipmon)      
+            mostra_ipmon2(ipmon)
+            
+        JogoSalvar()
      
 #Fase 1||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 while True:
@@ -308,11 +281,14 @@ while True:
         
         with open('jogador_salvo.json') as arquivo:
             seu_ipmon = json.load(arquivo)
-            print(seu_ipmon)
+            for ipmon in seu_ipmon:
+                mostra_ipmon2(ipmon)
         
         
         with open('Insper_World_salvo.json') as arquivo:
             inspermons = json.load(arquivo)
+            for ipmon in inspermons:
+                mostra_ipmon(ipmon)
 
 
         with open('Insperdex_salvo.json') as arquivo:
