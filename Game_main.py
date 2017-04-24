@@ -1,4 +1,4 @@
-#ABERTURA DE PROGRA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#ABERTURA DE PROGRAMA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import json
 from random import randrange
 
@@ -287,8 +287,7 @@ while True:
         
         with open('Insper_World_salvo.json') as arquivo:
             inspermons = json.load(arquivo)
-            for ipmon in inspermons:
-                mostra_ipmon(ipmon)
+            
 
 
         with open('Insperdex_salvo.json') as arquivo:
