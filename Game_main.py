@@ -82,22 +82,22 @@ def ganha_xp():
                           {'nome': 'Arthisilver', 'poder': 49, 'vida': 280, 'defesa': 43},
                           {'nome': 'Pedrosansilver', 'poder': 46, 'vida': 310, 'defesa': 40},
                           {'nome': 'Iagosilver', 'poder': 51, 'vida': 260, 'defesa': 38},
-			              {'nome': 'Lucicosilver', 'poder': 39, 'vida': 270, 'defesa': 39},
+                          {'nome': 'Lucicosilver', 'poder': 39, 'vida': 270, 'defesa': 39},
                           {'nome': 'Rodrreysilver', 'poder': 40, 'vida': 320, 'defesa': 44},
                           {'nome': 'Gilemessilver', 'poder': 41, 'vida': 300, 'defesa': 42},
                           {'nome': 'Esterquinsilver', 'poder': 42, 'vida': 290, 'defesa': 41},
                           {'nome': 'Davidfolsilver', 'poder': 43, 'vida': 280, 'defesa': 43},
-                          {'nome': 'Brunsilver', 'poder': 44, 'vida': 310, 'defesa': 40}
-                          {'nome': 'Emanusilver', 'poder': 52, 'vida': 260, 'defesa': 35}
-                          {'nome': 'Lucasilver', 'poder': 39, 'vida': 300, 'defesa': 40}
-                          {'nome': 'Guialisilver', 'poder': 47 , 'vida': 280, 'defesa': 45}
-                          {'nome': 'Vitorlisilver', 'poder': 42, 'vida': 310, 'defesa': 37}
-                          {'nome': 'Rothomesilver', 'poder': 50, 'vida': 290, 'defesa': 42}
-                          {'nome': 'Betosilver', 'poder': 45, 'vida': 270, 'defesa': 39}
-                          {'nome': 'Rebecatrisilver', 'poder': 43, 'vida': 290, 'defesa': 41}
-                          {'nome': 'Rodrigatsilver', 'poder': 41, 'vida': 310, 'defesa': 43}
-                          {'nome': 'Andresilver', 'poder': 48, 'vida': 270, 'defesa': 41}
-                          {'nome': 'Peazamsilver', 'poder': 46, 'vida': 300, 'defesa': 42}
+                          {'nome': 'Brunsilver', 'poder': 44, 'vida': 310, 'defesa': 40},
+                          {'nome': 'Emanusilver', 'poder': 52, 'vida': 260, 'defesa': 35},
+                          {'nome': 'Lucasilver', 'poder': 39, 'vida': 300, 'defesa': 40},
+                          {'nome': 'Guialisilver', 'poder': 47 , 'vida': 280, 'defesa': 45},
+                          {'nome': 'Vitorlisilver', 'poder': 42, 'vida': 310, 'defesa': 37},
+                          {'nome': 'Rothomesilver', 'poder': 50, 'vida': 290, 'defesa': 42},
+                          {'nome': 'Betosilver', 'poder': 45, 'vida': 270, 'defesa': 39},
+                          {'nome': 'Rebecatrisilver', 'poder': 43, 'vida': 290, 'defesa': 41},
+                          {'nome': 'Rodrigatsilver', 'poder': 41, 'vida': 310, 'defesa': 43},
+                          {'nome': 'Andresilver', 'poder': 48, 'vida': 270, 'defesa': 41},
+                          {'nome': 'Peazamsilver', 'poder': 46, 'vida': 300, 'defesa': 42},
                           {'nome': 'Carretasilver', 'poder': 51, 'vida': 270, 'defesa': 40}]
              
              for ipmon in ipmon_lv4:
@@ -114,7 +114,7 @@ def ganha_xp():
                          {'nome': 'Arthigold', 'poder': 89, 'vida': 360, 'defesa': 83},
                          {'nome': 'Pdrosangold', 'poder': 86, 'vida': 390, 'defesa': 80},
                          {'nome': 'Iagogold', 'poder': 91, 'vida': 340, 'defesa': 72},
-			             {'nome': 'Galigold', 'poder': 67, 'vida': 350, 'defesa': 79},
+			 {'nome': 'Galigold', 'poder': 67, 'vida': 350, 'defesa': 79},
                          {'nome': 'Pizzigold', 'poder': 72, 'vida': 340, 'defesa': 79},
                          {'nome': 'Eligold', 'poder': 77, 'vida': 370, 'defesa': 78},
                          {'nome': 'Tricategold', 'poder': 80, 'vida': 360, 'defesa': 80},
